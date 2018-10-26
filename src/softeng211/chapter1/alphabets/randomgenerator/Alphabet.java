@@ -1,4 +1,4 @@
-package softeng211.chapter1.alphabets;
+package softeng211.chapter1.alphabets.randomgenerator;
 
 import java.util.ArrayList;
 import java.util.List;
