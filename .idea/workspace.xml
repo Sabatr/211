@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5cb58a4b-d8fb-44c1-be50-8f9f568c47a0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/softeng211/chapter1/alphabets/Alphabet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/softeng211/chapter1/alphabets/randomgenerator/Alphabet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/softeng211/chapter1/alphabets/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/softeng211/chapter1/alphabets/randomgenerator/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/softeng211/chapter1/alphabets/StringGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/softeng211/chapter1/alphabets/randomgenerator/StringGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/softeng211/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/softeng211/chapter2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/softeng211/chapter1/Main.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,23 +17,23 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/softeng211/chapter1/alphabets/monotone/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/softeng211/chapter2/reduced/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="85" selection-start-line="6" selection-start-column="85" selection-end-line="6" selection-end-column="85" />
+            <state relative-caret-position="153">
+              <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+              <folding>
+                <element signature="e#113#114#0" expanded="true" />
+                <element signature="e#154#155#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MonotoneGenerator.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/softeng211/chapter1/alphabets/monotone/MonotoneGenerator.java">
+      <file leaf-file-name="FractionReducer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/softeng211/chapter2/reduced/FractionReducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="66" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#295#303#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="101">
+              <caret line="18" column="106" selection-start-line="18" selection-start-column="106" selection-end-line="18" selection-end-column="106" />
             </state>
           </provider>
         </entry>
@@ -66,6 +65,8 @@
         <option value="$PROJECT_DIR$/src/softeng211/chapter1/alphabets/randomgenerator/Main.java" />
         <option value="$PROJECT_DIR$/src/softeng211/chapter1/alphabets/monotone/Main.java" />
         <option value="$PROJECT_DIR$/src/softeng211/chapter1/alphabets/monotone/MonotoneGenerator.java" />
+        <option value="$PROJECT_DIR$/src/softeng211/chapter2/reduced/Main.java" />
+        <option value="$PROJECT_DIR$/src/softeng211/chapter2/reduced/FractionReducer.java" />
       </list>
     </option>
   </component>
@@ -123,25 +124,15 @@
               <item name="211Revision" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="softeng211" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter1" type="462c0819:PsiDirectoryNode" />
-              <item name="alphabets" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="211Revision" type="b2602c69:ProjectViewProjectNode" />
               <item name="211Revision" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="softeng211" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter1" type="462c0819:PsiDirectoryNode" />
-              <item name="alphabets" type="462c0819:PsiDirectoryNode" />
-              <item name="monotone" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="211Revision" type="b2602c69:ProjectViewProjectNode" />
-              <item name="211Revision" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="softeng211" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter1" type="462c0819:PsiDirectoryNode" />
-              <item name="rational" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter2" type="462c0819:PsiDirectoryNode" />
+              <item name="reduced" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -166,7 +157,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (2)">
+  <component name="RunManager" selected="Application.Main (3)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="softeng211.chapter1.rational.Main" />
       <module name="211Revision" />
@@ -183,6 +174,16 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="softeng211.chapter1.alphabets.monotone.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="softeng211.chapter2.reduced.Main" />
+      <module name="211Revision" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="softeng211.chapter2.reduced.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -208,9 +209,11 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main (2)" />
+      <item itemvalue="Application.Main (3)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
@@ -228,12 +231,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540528555792</updated>
-      <workItem from="1540528561134" duration="4132000" />
+      <workItem from="1540528561134" duration="5312000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4132000" />
+    <option name="totallyTimeSpent" value="5312000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -245,10 +248,10 @@
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.50130206" side_tool="true" visible="true" weight="0.32965517" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.5019531" side_tool="true" visible="true" weight="0.32965517" />
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4986979" visible="true" weight="0.32965517" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49804688" visible="true" weight="0.32965517" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
@@ -259,7 +262,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
       <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49934897" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4986979" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -301,13 +304,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/softeng211/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/softeng211/chapter1/rational/RationalChecker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -343,13 +339,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/softeng211/chapter1/alphabets/monotone/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="85" selection-start-line="6" selection-start-column="85" selection-end-line="6" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/softeng211/chapter1/alphabets/monotone/MonotoneGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -358,6 +347,38 @@
             <element signature="imports" expanded="true" />
             <element signature="e#295#303#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/softeng211/chapter2/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/softeng211/chapter1/alphabets/monotone/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="6" column="85" selection-start-line="6" selection-start-column="85" selection-end-line="6" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/softeng211/chapter2/reduced/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding>
+            <element signature="e#113#114#0" expanded="true" />
+            <element signature="e#154#155#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/softeng211/chapter2/reduced/FractionReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="18" column="106" selection-start-line="18" selection-start-column="106" selection-end-line="18" selection-end-column="106" />
         </state>
       </provider>
     </entry>

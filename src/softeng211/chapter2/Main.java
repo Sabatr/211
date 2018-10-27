@@ -1,4 +1,4 @@
-package softeng211;
+package softeng211.chapter2;
 
 public class Main {
 
