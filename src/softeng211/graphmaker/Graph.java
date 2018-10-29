@@ -1,39 +1,59 @@
 package softeng211.graphmaker;
 
 import javax.swing.*;
-import java.awt.Dimension;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This class is responsible for making the graph which is displayable to the user. It stores all of the vertices
+ * and edges too.
+ *
+ * @author Brian Nguyen
+ */
 public class Graph{
     private List<Vertex> _vertices;
     private List<Edge> _edges;
     private JFrame _frame;
+
+    /**
+     * The user can either make their own graph or generate a new one.
+     * @param vertices
+     * @param edges
+     */
     public Graph(List<Vertex> vertices,List<Edge> edges) {
         _vertices = vertices;
         _edges = edges;
         makeGraph();
     }
     public Graph() {
-
     }
 
+    /**
+     * Makes the frame which is used for the graph.
+     */
     private void makeGraph() {
         _frame = new JFrame();
         _frame.setSize(500,500);
         _frame.setLocationRelativeTo(null);
         _frame.add(new NodePanel(_vertices,_edges));
+        _frame.setTitle("Graph");
         _frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         _frame.setVisible(true);
     }
 
+    /**
+     * Makes a random graph based on the user preference.
+     * @param numberOfVertices
+     * @param numberOfEdges
+     */
     public void makeRandomGraph(int numberOfVertices,int numberOfEdges) {
         if (_vertices != null || _edges != null) {
             System.out.println("Cannot set vertices and edges if you want a random list.");
             return;
         }
-        if (numberOfVertices <= numberOfEdges) {
-            System.out.println("This program cannot handle inputs where number of vertices is greater than number of edges");
+        if ((numberOfVertices*(numberOfVertices-1))/2 < numberOfEdges) {
+            System.out.println("Cannot create a graph with " + numberOfVertices +" vertices and " + numberOfEdges +" edges.");
+            System.out.println("NOTE: This program does not handle edges pointing to itself.");
             return;
         }
         _vertices = populateVertices(numberOfVertices);
@@ -42,6 +62,11 @@ public class Graph{
 
     }
 
+    /**
+     * Randomly n number of vertices. These vertices cannot overlap.
+     * @param numberOfVertices: the number of vertices the user wants
+     * @return
+     */
     private List<Vertex> populateVertices(int numberOfVertices) {
         List<Vertex> vertices = new ArrayList<>();
         for (int i = 0;i<numberOfVertices;i++) {
@@ -49,7 +74,8 @@ public class Graph{
             int x = (int)(Math.random()*400);
             int y = (int)(Math.random()*400);
             for (Vertex vertex : vertices) {
-                if (x >= vertex.getX()-50 && x <= vertex.getX()+50) {
+                //Checks if a vertex exists at the randomly generate position
+                if (x >= vertex.getX()-Vertex.NODE_SIZE && x <= vertex.getX()+Vertex.NODE_SIZE) {
                     exists = true;
                     i--;
                     break;
@@ -62,17 +88,25 @@ public class Graph{
         return vertices;
     }
 
+    /**
+     * Randomly creates edges between existing vertices.
+     * @param numberOfEdges
+     * @return
+     */
     private List<Edge> populateEdges(int numberOfEdges) {
         List<Edge> edges = new ArrayList<>();
         for (int i = 0;i<numberOfEdges;i++) {
             boolean exists = false;
             Vertex vertexOne = _vertices.get((int)(Math.random()*_vertices.size()));
             Vertex vertexTwo = _vertices.get((int)(Math.random()*_vertices.size()));
-            System.out.println(vertexOne.equals(vertexTwo));
+            if (vertexOne.equals(vertexTwo)) {
+                i--;
+                exists = true;
+            }
             for (Edge edge : edges) {
+                //Checks if edge exists or if the chosen vertex is itself
                 if ((edge.getStartingVertex().equals(vertexOne) && edge.getEndingVertex().equals(vertexTwo)) ||
-                        (edge.getStartingVertex().equals(vertexTwo)&& edge.getEndingVertex().equals(vertexOne)) ||
-                        (vertexOne.equals(vertexTwo))) {
+                        (edge.getStartingVertex().equals(vertexTwo)&& edge.getEndingVertex().equals(vertexOne))){
                     exists = true;
                     i--;
                     break;
@@ -81,10 +115,6 @@ public class Graph{
             if (!exists) {
                 edges.add(new Edge(vertexOne,vertexTwo));
             }
-        }
-
-        for (Edge edge : edges) {
-            System.out.println(edge.getStartingVertex() + " and" + edge.getEndingVertex());
         }
         return edges;
     }
