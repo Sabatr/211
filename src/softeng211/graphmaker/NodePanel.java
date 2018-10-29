@@ -26,15 +26,19 @@ public class NodePanel extends JPanel {
         super.paintComponent(g);
         int i = 0;
         for (Vertex vertex: _vertices) {
+            if (vertex.isEven()) {
+                g.setColor(Color.red);
+            }
             g.drawOval(vertex.getX(),vertex.getY(),Vertex.NODE_SIZE,Vertex.NODE_SIZE);
             g.drawString(i+"", vertex.getX(),vertex.getY());
             i++;
+            g.setColor(Color.black);
         }
 
         for (Edge edge : _edges) {
             g.drawLine(edge.getStartingVertex().getX()+Vertex.NODE_SIZE/2,edge.getStartingVertex().getY()+Vertex.NODE_SIZE/2,
                     edge.getEndingVertex().getX()+Vertex.NODE_SIZE/2,edge.getEndingVertex().getY()+Vertex.NODE_SIZE/2);
         }
-
     }
+
 }

@@ -1,6 +1,7 @@
 package softeng211.graphmaker;
 
 import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -117,6 +118,33 @@ public class Graph{
             }
         }
         return edges;
+    }
+
+    /**
+     *
+     * @return the original vertices
+     */
+    public List<Vertex> getVertices() {
+        return _vertices;
+    }
+
+    /**
+     *
+     * @return the original edges
+     */
+    public List<Edge> getEdges() {
+        return _edges;
+    }
+
+    /**
+     * Updates the graph when necessary.
+     * @param newVertices
+     */
+    public void update(List<Vertex> newVertices) {
+        _frame.getContentPane().removeAll();
+        _frame.add(new NodePanel(newVertices,_edges));
+        _frame.repaint();
+        _frame.revalidate();
     }
 
 }
