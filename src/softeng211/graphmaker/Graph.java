@@ -1,7 +1,6 @@
 package softeng211.graphmaker;
 
 import javax.swing.*;
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,7 +33,7 @@ public class Graph{
      */
     private void makeGraph() {
         _frame = new JFrame();
-        _frame.setSize(500,500);
+        _frame.setSize(1500,1000);
         _frame.setLocationRelativeTo(null);
         _frame.add(new NodePanel(_vertices,_edges));
         _frame.setTitle("Graph");
@@ -72,8 +71,8 @@ public class Graph{
         List<Vertex> vertices = new ArrayList<>();
         for (int i = 0;i<numberOfVertices;i++) {
             boolean exists = false;
-            int x = (int)(Math.random()*400);
-            int y = (int)(Math.random()*400);
+            int x = (int)(Math.random()*1400);
+            int y = (int)(Math.random()*900);
             for (Vertex vertex : vertices) {
                 //Checks if a vertex exists at the randomly generate position
                 if (x >= vertex.getX()-Vertex.NODE_SIZE && x <= vertex.getX()+Vertex.NODE_SIZE) {
@@ -143,6 +142,13 @@ public class Graph{
     public void update(List<Vertex> newVertices) {
         _frame.getContentPane().removeAll();
         _frame.add(new NodePanel(newVertices,_edges));
+        _frame.repaint();
+        _frame.revalidate();
+    }
+
+    public void update(List<Vertex> newVertices, List<Edge> newEdges) {
+        _frame.getContentPane().removeAll();
+        _frame.add(new NodePanel(newVertices,newEdges));
         _frame.repaint();
         _frame.revalidate();
     }

@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cb58a4b-d8fb-44c1-be50-8f9f568c47a0" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/softeng211/chapter5/graphs/EvenChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/softeng211/chapter5/graphs/EvenChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/softeng211/chapter5/graphs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/softeng211/chapter5/graphs/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/softeng211/graphmaker/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/softeng211/graphmaker/Edge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/softeng211/graphmaker/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/softeng211/graphmaker/Graph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/softeng211/graphmaker/NodePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/softeng211/graphmaker/NodePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/softeng211/graphmaker/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/softeng211/graphmaker/Vertex.java" afterDir="false" />
@@ -18,10 +21,41 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/softeng211/chapter5/graphs/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/softeng211/chapter6/pathexistence/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="73" selection-start-line="15" selection-start-column="73" selection-end-line="15" selection-end-column="73" />
+            <state relative-caret-position="136">
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckPathExistence.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/softeng211/chapter6/pathexistence/CheckPathExistence.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="91" column="39" selection-start-line="91" selection-start-column="39" selection-end-line="91" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2590#2591#0" expanded="true" />
+                <element signature="e#2622#2623#0" expanded="true" />
+                <element signature="e#2756#2757#0" expanded="true" />
+                <element signature="e#2785#2786#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Vertex.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/softeng211/graphmaker/Vertex.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
+              <folding>
+                <element signature="e#1328#1329#0" expanded="true" />
+                <element signature="e#1362#1363#0" expanded="true" />
+                <element signature="e#1400#1401#0" expanded="true" />
+                <element signature="e#1431#1432#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -29,45 +63,10 @@
       <file leaf-file-name="Graph.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/softeng211/graphmaker/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="139" column="40" selection-start-line="139" selection-start-column="40" selection-end-line="139" selection-end-column="40" />
+            <state relative-caret-position="129">
+              <caret line="77" column="83" lean-forward="true" selection-start-line="77" selection-start-column="83" selection-end-line="77" selection-end-column="83" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4131#4132#0" expanded="true" />
-                <element signature="e#4163#4164#0" expanded="true" />
-                <element signature="e#4199#4200#0" expanded="true" />
-                <element signature="e#4228#4229#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NodePanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/softeng211/graphmaker/NodePanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Vertex.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/softeng211/graphmaker/Vertex.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
-              <folding>
-                <element signature="e#461#462#0" expanded="true" />
-                <element signature="e#486#487#0" expanded="true" />
-                <element signature="e#511#512#0" expanded="true" />
-                <element signature="e#536#537#0" expanded="true" />
-                <element signature="e#1003#1004#0" expanded="true" />
-                <element signature="e#1035#1036#0" expanded="true" />
-                <element signature="e#1132#1133#0" expanded="true" />
-                <element signature="e#1162#1163#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,9 +78,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Singleton" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>System.out.println(</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -89,8 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/softeng211/chapter1/Main.java" />
         <option value="$PROJECT_DIR$/src/softeng211/chapter1/rational/Main.java" />
         <option value="$PROJECT_DIR$/src/softeng211/Main.java" />
         <option value="$PROJECT_DIR$/src/softeng211/chapter1/rational/RationalChecker.java" />
@@ -130,12 +133,18 @@
         <option value="$PROJECT_DIR$/src/softeng211/chapter5/adjacencylistandmatrix/Main.java" />
         <option value="$PROJECT_DIR$/src/softeng211/graphmaker/GraphGUI.java" />
         <option value="$PROJECT_DIR$/src/softeng211/graphmaker/Vertices.java" />
-        <option value="$PROJECT_DIR$/src/softeng211/graphmaker/Edge.java" />
-        <option value="$PROJECT_DIR$/src/softeng211/graphmaker/NodePanel.java" />
-        <option value="$PROJECT_DIR$/src/softeng211/chapter5/graphs/Main.java" />
         <option value="$PROJECT_DIR$/src/softeng211/chapter5/graphs/EvenChecker.java" />
-        <option value="$PROJECT_DIR$/src/softeng211/graphmaker/Graph.java" />
+        <option value="$PROJECT_DIR$/src/softeng211/chapter5/graphs/evendegree/Main.java" />
+        <option value="$PROJECT_DIR$/src/softeng211/chapter5/graphs/evendegree/EvenChecker.java" />
+        <option value="$PROJECT_DIR$/src/softeng211/chapter5/graphs/stronglyconnected/Main.java" />
+        <option value="$PROJECT_DIR$/src/softeng211/chapter6/Main.java" />
+        <option value="$PROJECT_DIR$/src/softeng211/graphmaker/NodePanel.java" />
+        <option value="$PROJECT_DIR$/src/softeng211/graphmaker/Edge.java" />
         <option value="$PROJECT_DIR$/src/softeng211/graphmaker/Vertex.java" />
+        <option value="$PROJECT_DIR$/src/softeng211/graphmaker/Graph.java" />
+        <option value="$PROJECT_DIR$/src/softeng211/chapter5/graphs/Main.java" />
+        <option value="$PROJECT_DIR$/src/softeng211/chapter6/pathexistence/Main.java" />
+        <option value="$PROJECT_DIR$/src/softeng211/chapter6/pathexistence/CheckPathExistence.java" />
       </list>
     </option>
   </component>
@@ -199,6 +208,21 @@
               <item name="211Revision" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="softeng211" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter6" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="211Revision" type="b2602c69:ProjectViewProjectNode" />
+              <item name="211Revision" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="softeng211" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter6" type="462c0819:PsiDirectoryNode" />
+              <item name="pathexistence" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="211Revision" type="b2602c69:ProjectViewProjectNode" />
+              <item name="211Revision" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="softeng211" type="462c0819:PsiDirectoryNode" />
               <item name="graphmaker" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -229,23 +253,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="softeng211.chapter4.euclidean.Main" />
+  <component name="RunManager" selected="Application.Main (2)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="softeng211.chapter6.Main" />
       <module name="211Revision" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="softeng211.chapter4.euclidean.*" />
+          <option name="PATTERN" value="softeng211.chapter6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="softeng211.chapter4.congruence.Main" />
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="softeng211.chapter6.pathexistence.Main" />
       <module name="211Revision" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="softeng211.chapter4.congruence.*" />
+          <option name="PATTERN" value="softeng211.chapter6.pathexistence.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -301,19 +325,19 @@
       </extension>
     </configuration>
     <list>
-      <item itemvalue="Application.Main (2)" />
-      <item itemvalue="Application.Main (3)" />
       <item itemvalue="Application.Main (4)" />
       <item itemvalue="Application.Main (5)" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.Main (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (5)" />
         <item itemvalue="Application.Main (4)" />
-        <item itemvalue="Application.Main (3)" />
-        <item itemvalue="Application.Main (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -329,12 +353,12 @@
       <updated>1540528555792</updated>
       <workItem from="1540528561134" duration="6617000" />
       <workItem from="1540696338469" duration="12507000" />
-      <workItem from="1540772500989" duration="16648000" />
+      <workItem from="1540772500989" duration="21947000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35772000" />
+    <option name="totallyTimeSpent" value="41071000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -346,28 +370,28 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5078125" side_tool="true" visible="true" weight="0.32965517" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5045573" side_tool="true" weight="0.39724138" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4921875" visible="true" weight="0.32965517" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49153647" visible="true" weight="0.32965517" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20182292" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4993481" weight="0.32914925" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49674478" weight="0.39724138" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49544272" weight="0.39724138" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4993481" weight="0.32914925" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,6 +441,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding>
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -550,6 +578,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8">
           <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding>
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -629,73 +661,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/softeng211/graphmaker/Edge.java">
+    <entry file="file://$PROJECT_DIR$/src/softeng211/chapter5/graphs/stronglyconnected/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-          <folding>
-            <element signature="e#321#322#0" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/softeng211/chapter5/graphs/EvenChecker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="70" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
+        <state relative-caret-position="146">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/softeng211/chapter5/graphs/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="73" selection-start-line="15" selection-start-column="73" selection-end-line="15" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/softeng211/graphmaker/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="139" column="40" selection-start-line="139" selection-start-column="40" selection-end-line="139" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4131#4132#0" expanded="true" />
-            <element signature="e#4163#4164#0" expanded="true" />
-            <element signature="e#4199#4200#0" expanded="true" />
-            <element signature="e#4228#4229#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/softeng211/graphmaker/NodePanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+        <state relative-caret-position="302">
+          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/softeng211/chapter6/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/softeng211/graphmaker/Edge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+          <folding>
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/softeng211/chapter5/graphs/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/softeng211/graphmaker/Vertex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
+        <state relative-caret-position="377">
+          <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
           <folding>
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-            <element signature="e#1035#1036#0" expanded="true" />
-            <element signature="e#1132#1133#0" expanded="true" />
-            <element signature="e#1162#1163#0" expanded="true" />
+            <element signature="e#1328#1329#0" expanded="true" />
+            <element signature="e#1362#1363#0" expanded="true" />
+            <element signature="e#1400#1401#0" expanded="true" />
+            <element signature="e#1431#1432#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/softeng211/graphmaker/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="77" column="83" lean-forward="true" selection-start-line="77" selection-start-column="83" selection-end-line="77" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/softeng211/chapter6/pathexistence/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/softeng211/chapter6/pathexistence/CheckPathExistence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="91" column="39" selection-start-line="91" selection-start-column="39" selection-end-line="91" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2590#2591#0" expanded="true" />
+            <element signature="e#2622#2623#0" expanded="true" />
+            <element signature="e#2756#2757#0" expanded="true" />
+            <element signature="e#2785#2786#0" expanded="true" />
           </folding>
         </state>
       </provider>

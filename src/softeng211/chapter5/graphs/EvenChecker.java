@@ -3,6 +3,7 @@ package softeng211.chapter5.graphs;
 import softeng211.graphmaker.Edge;
 import softeng211.graphmaker.Vertex;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,7 +33,7 @@ public class EvenChecker {
                 }
             }
             if (count % 2 == 0) {
-                vertex.setEven(true);
+                vertex.setColour(Color.red);
             }
         }
         return _vertices;
