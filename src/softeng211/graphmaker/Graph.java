@@ -11,8 +11,9 @@ import java.util.List;
  * @author Brian Nguyen
  */
 public class Graph{
-    private List<Vertex> _vertices;
-    private List<Edge> _edges;
+    public static int FRAME_WIDTH = 1500;
+    protected List<Vertex> _vertices;
+    protected List<Edge> _edges;
     private JFrame _frame;
 
     /**
@@ -31,9 +32,9 @@ public class Graph{
     /**
      * Makes the frame which is used for the graph.
      */
-    private void makeGraph() {
+    protected void makeGraph() {
         _frame = new JFrame();
-        _frame.setSize(1500,1000);
+        _frame.setSize(FRAME_WIDTH,1000);
         _frame.setLocationRelativeTo(null);
         _frame.add(new NodePanel(_vertices,_edges));
         _frame.setTitle("Graph");
