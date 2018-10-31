@@ -24,14 +24,13 @@ public class BipartiteGraph extends Graph {
         _vertices = new ArrayList<>(_list);
         //We want to make sure only the even numbers point to odd and odd points to even.
         for (int i = 0;i<edgesOfFirst;i++) {
-            _edges.add(new Edge(_vertices.get((int)(Math.random()*first)),_vertices.get((int)(Math.random()*second)+1)));
+            _edges.add(new Edge(_vertices.get((int)(Math.random()*first)),_vertices.get((int)(Math.random()*second)+first)));
         }
 
         for (int i = 0;i<edgesOfSecond;i++) {
-            _edges.add(new Edge(_vertices.get((int)(Math.random()*second)+1),_vertices.get((int)(Math.random()*first))));
+            _edges.add(new Edge(_vertices.get((int)(Math.random()*second)+first),_vertices.get((int)(Math.random()*first))));
         }
-
-        System.out.println(_edges);
+        
         makeGraph();
     }
 
