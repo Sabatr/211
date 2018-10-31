@@ -68,7 +68,7 @@ public class Graph{
      * @param numberOfVertices: the number of vertices the user wants
      * @return
      */
-    private List<Vertex> populateVertices(int numberOfVertices) {
+    protected List<Vertex> populateVertices(int numberOfVertices) {
         List<Vertex> vertices = new ArrayList<>();
         for (int i = 0;i<numberOfVertices;i++) {
             boolean exists = false;
