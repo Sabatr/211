@@ -1,6 +1,7 @@
 package softeng211.graphmaker;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * This class creates a random bipartite graph.
@@ -12,24 +13,56 @@ import java.util.ArrayList;
  * @author Brian Nguyen
  */
 public class BipartiteGraph extends Graph {
+    private List<BipartiteVertex> _list;
     public BipartiteGraph() {
+        _list = new ArrayList<>();
         _edges = new ArrayList<>();
     }
     public void makeRandomBipartiteGraph(int first,int second,int edgesOfFirst, int edgesOfSecond) {
-        _vertices = populateVertices(first+second);
+        _list = populateBipartiteVertices(first,second);
+        setFirstAndSecond(first,second);
+        _vertices = new ArrayList<>(_list);
         //We want to make sure only the even numbers point to odd and odd points to even.
-        for (int i = 0; i<edgesOfFirst;i++) {
-            int getEven = (int)(Math.random() * first/2)*2;
-            int getOdd = (int)(Math.random() * second/2)*2+1;
-            _edges.add(new Edge(_vertices.get(getEven),_vertices.get(getOdd)));
+        for (int i = 0;i<edgesOfFirst;i++) {
+            _edges.add(new Edge(_vertices.get((int)(Math.random()*first)),_vertices.get((int)(Math.random()*second)+1)));
         }
 
-        for (int i =0;i<=edgesOfSecond;i++) {
-            int getEven = (int)(Math.random() * first/2)*2;
-            int getOdd = (int)(Math.random() * second/2)*2+1;
-            _edges.add(new Edge(_vertices.get(getOdd),_vertices.get(getEven)));
+        for (int i = 0;i<edgesOfSecond;i++) {
+            _edges.add(new Edge(_vertices.get((int)(Math.random()*second)+1),_vertices.get((int)(Math.random()*first))));
         }
 
+        System.out.println(_edges);
         makeGraph();
+    }
+
+    private List<BipartiteVertex> populateBipartiteVertices(int first, int second) {
+        List<BipartiteVertex> vertices = new ArrayList<>();
+        for (int i = 0;i<first+second;i++) {
+            boolean exists = false;
+            int x = (int)(Math.random()*1400);
+            int y = (int)(Math.random()*900);
+            for (Vertex vertex : vertices) {
+                //Checks if a vertex exists at the randomly generate position
+                if (x >= vertex.getX()-Vertex.NODE_SIZE && x <= vertex.getX()+Vertex.NODE_SIZE) {
+                    exists = true;
+                    i--;
+                    break;
+                }
+            }
+            if (!exists) {
+                vertices.add(new BipartiteVertex(x,y));
+            }
+        }
+        return vertices;
+    }
+
+    private void setFirstAndSecond(int first, int second) {
+        for (int i = 0 ;i<first;i++) {
+            _list.get(i).setPlayer(BipartiteVertex.Player.ONE);
+        }
+
+        for (int i = first; i<first+second;i++) {
+            _list.get(i).setPlayer(BipartiteVertex.Player.TWO);
+        }
     }
 }
