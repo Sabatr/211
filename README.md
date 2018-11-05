@@ -1,6 +1,6 @@
 <h1> 211 Programming Exercises </h1>
 
-<p>Some programs I wrote when studying for my SOFTENG211 paper. A lot of chapters have been missed and some stuff is incomplete. I figured I might as well show this as there are some things here that I think is kinda cool.<br></p>
+<p>Some programs I wrote when studying for my SOFTENG211 paper. A lot of chapters have been missed and some stuff is incomplete. I figured that I might as well show this as there are some things here that I think is kinda cool.<br></p>
 
 <p>Most of the program exercises are from "Lectures on Discrete Mathematics for Computer Science" by Bakhadyr Khoussainov and Nodira Khoussainova. However, some of these algorithms used a 'GOTO' function. Java does not have this, so I had to improvise.  </p>
 
