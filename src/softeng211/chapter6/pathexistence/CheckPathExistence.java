@@ -3,6 +3,7 @@ package softeng211.chapter6.pathexistence;
 import softeng211.graphmaker.Edge;
 import softeng211.graphmaker.Vertex;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -56,6 +57,23 @@ public class CheckPathExistence {
     }
 
     /**
+     * Sets the colour of the connected component
+     */
+    private void setPathColour() {
+        for (Vertex vertex : _vertices) {
+            if (vertex.isVisited()) {
+                vertex.setColour(Color.blue);
+            }
+        }
+        for (Edge edge : _edges) {
+            if (edge.getStartingVertex().isVisited() || edge.getEndingVertex().isVisited()) {
+                edge.setColour(Color.blue);
+            }
+        }
+    }
+
+
+    /**
      * Recursively checks if the neighbours of a node. Then marks it as visited
      * @param neighbours
      */
@@ -68,7 +86,6 @@ public class CheckPathExistence {
             if (getNeighbours(vertex).size() > 1) {
                 checkNeighbours(getNeighbours(vertex));
             }
-
         }
     }
 
@@ -91,15 +108,14 @@ public class CheckPathExistence {
 
     /**
      * @return the new set of vertices
-     * TODO: Possibly change the colour
      */
     public List<Vertex> getNewVertices() {
+        setPathColour();
         return _vertices;
     }
 
     /**
      * @return the new set of edges
-     * TODO: Possibly change the colour
      */
     public List<Edge> getNewEdges() {
         return _edges;

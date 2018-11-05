@@ -5,6 +5,6 @@ import softeng211.graphmaker.TreeGraph;
 public class Main {
     public static void main(String[] args) {
         TreeGraph graph = new TreeGraph();
-        graph.makeRandomTreeGraph(40);
+        graph.makeRandomTreeGraph(20);
     }
 }

@@ -11,9 +11,9 @@ import softeng211.graphmaker.Graph;
 public class Main {
     public static void main(String[] args) {
         Graph graph = new Graph();
-        graph.makeRandomGraph(5,3);
+        graph.makeRandomGraph(15,11);
         CheckPathExistence checker = new CheckPathExistence(graph.getVertices(),graph.getEdges());
-        checker.check(1,2);
+        checker.check(0,5);
         graph.update(checker.getNewVertices(),checker.getNewEdges());
     }
 }

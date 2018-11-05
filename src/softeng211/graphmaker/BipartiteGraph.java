@@ -30,7 +30,7 @@ public class BipartiteGraph extends Graph {
         for (int i = 0;i<edgesOfSecond;i++) {
             _edges.add(new Edge(_vertices.get((int)(Math.random()*second)+first),_vertices.get((int)(Math.random()*first))));
         }
-        
+
         makeGraph();
     }
 
